@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Welcome to the Library</h2>
+    <table id="bookTable">
+        <thead>
+            <tr id="listTitle">
+                <th>Book Title</th>
+                <th>Author</th>
+                <th>Number of Pages</th>
+                <th>Have I read it?</th>
+            </tr>
+        </thead>
+        
+        <tbody id="bookList">
+            <!--tr class="bookRow" data-id="-1">
+                <td>From the Ground Up</td>
+                <td>A.F. MacDonald</td>
+                <td>330</td>
+                <td>Yes</td>
+                <td><button class="deleteBook">X</button></td>
+            </tr-->
+        </tbody>
+        
+    </table>
+
+    <dialog id="bookDialog">
+        <form id="bookForm">
+            <label for="bName">Book title</label><br>
+            <input type="text" name="bName" id="bName" ><br>
+    
+            <label for="bAuthor">Book author</label><br>
+            <input type="text" name="bAuthor" id="bAuthor" ><br>
+    
+            <label for="bPage">Total pages</label><br>
+            <input type="number" name="bPage" id="bPage" ><br>
+    
+            <label for="bRead">Read before</label><br>
+            <input type="checkbox" name="bRead" id="bRead"><br>
+    
+            <input type="submit" value="Add Book">
+            
+        </form>
+        <button id="closeBtn">Close</button>
+    </dialog>
+    
+
+    <button id="addBook">Add a book!</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
